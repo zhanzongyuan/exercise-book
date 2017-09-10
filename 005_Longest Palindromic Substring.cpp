@@ -1,12 +1,3 @@
-//
-//  004_Longest Palindromic Substring.cpp
-//  leetcodeTest
-//
-//  Created by applecz on 2017/9/8.
-//  Copyright © 2017年 applecz. All rights reserved.
-//
-
-#include <stdio.h>
 
 class Solution {
 public:
@@ -27,13 +18,12 @@ public:
         while(flag<n){
             if (n-flag<=maxR) break;
             while(left>=0 && right<n && str[left]==str[right]){
-                R[right]=R[left];
                 left--;
                 right++;
             }
             left++;
             right--;
-            R[flag]=right-flag+1;
+            R[flag]=right-flag;
             if (R[flag]>maxR) {
                 maxR=R[flag];
                 int tail=(right-1)/2;
@@ -46,9 +36,15 @@ public:
             }
             else
                 for (int i=flag+1; i<=right; i++){
-                    if (R[2*flag-i]>right-i){
-                        flag=right=left=i;
+                    int j=2*flag-i;
+                    if (R[j]>=right-i){
+                        flag=i;
+                        right++;
+                        left=2*i-right;
                         break;
+                    }
+                    else {
+                        R[i]=R[j];
                     }
                 }
         }
