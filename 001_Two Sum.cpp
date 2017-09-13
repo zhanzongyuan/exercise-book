@@ -9,7 +9,7 @@
 #include <vector>
 using namespace std;
 
-//4.0 v
+//v4.0
 
 class Solution {
 public:
@@ -33,7 +33,7 @@ public:
 
 
 /*
- //3.0 v
+ //v3.0
  class Solution {
  public:
  vector<int> twoSum(vector<int>& nums, int target) {
@@ -61,7 +61,7 @@ public:
 
 
 /*
- //2.0 v
+ //v2.0
  class Solution {
  public:
  vector<int> twoSum(vector<int>& nums, int target) {
@@ -82,7 +82,7 @@ public:
 
 
 /*
- //1.0 v
+ //v1.0
  class Solution {
  public:
     vector<int> twoSum(vector<int>& nums, int target) {

@@ -14,7 +14,7 @@
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
  */
-//1.0 v
+//v1.0
 class Solution {
 public:
     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {

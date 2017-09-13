@@ -13,7 +13,57 @@
 //  Copyright © 2017年 applecz. All rights reserved.
 //
 
-// 1.0 v
+// v2.0
+
+class Solution {
+public:
+    vector<vector<int>> threeSum(vector<int>& nums) {
+        vector<vector<int>> result;
+        
+        //排序
+        int n=nums.size();
+        sort(nums.begin(), nums.end());
+        
+        int i=0;
+        while(i<n){
+            //网上学来的优化小技巧 可以减少一半的无用搜索
+            //if (nums[i]>0) break;
+            //但是实际测试却比原来版本的要慢
+            
+            int target=-nums[i];
+            int left=i+1;
+            int right=n-1;
+            while(left<right){
+                int sum=nums[left]+nums[right];
+                //从两端向中心搜索的思想，同时向中心移动下标
+                if (sum<target){
+                    left++;
+                }
+                else if (sum>target){
+                    right--;
+                }
+                else{
+                    vector<int> temp={nums[i], nums[left], nums[right]};
+                    result.push_back(temp);
+                    //消重
+                    while(left<right&&nums[left]==nums[left+1]) left++;
+                    left++;
+                    while(left<right&&nums[right]==nums[right-1]) right--;
+                    right--;
+                }
+            }
+            do
+                i++;
+            while(i<n&&nums[i]==nums[i-1]);
+        }
+        
+        
+        return result;
+    }
+};
+
+/*
+// v1.0
 class Solution {
 public:
     vector<vector<int>> threeSum(vector<int>& nums) {
@@ -62,3 +112,4 @@ public:
         return result;
     }
 };
+ */

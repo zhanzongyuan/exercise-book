@@ -6,7 +6,7 @@
 //
 //
 
-// 3.0 v
+// v3.0
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
@@ -36,7 +36,7 @@ public:
 
 
 /*
-// 2.0 v
+// v2.0
 #include<memory.h>
 class Solution {
 public:
@@ -68,7 +68,7 @@ public:
 
 
 /*
-// 1.0 v
+// v1.0
 #include<memory.h>
 class Solution {
 public:
