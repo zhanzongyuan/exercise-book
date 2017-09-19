@@ -18,3 +18,17 @@ The repository is used to store my code for problems in leetcode
 > 2017-09-13 12:16
 - bug1: zigzag排列形式理解，以及规律探索
 - bug2: s="AB" 1; 当转换行数为1时，出现bug，当作特殊情况处理，临界点bug
+
+## 007 int2str
+> 2017-09-18 08:35
+- 对越界的判别方法
+    - 符号变化
+    - long long 范围用INT_MAX和INT_MIN判定
+
+## 009 Palindrome Number
+> 2017-09-19 13:00
+- bug1 忘了考虑负数 x=INT_MIN=-2147483648 无法abs
+- bug2 100021 验证中间变成只有一位的数字 不可用x<10判定
+- bug3 k==0 不可k==1
+- improve thinking 回文比较方法，数字反向后比较
+
