@@ -52,10 +52,19 @@ The repository is used to store my code for problems in leetcode
 - 答案方法更巧妙，通过一个count，利用了众数过半的特点
 
 
-
-##53_Maximum Subarray
+## 053_Maximum Subarray
 
 > 2017-09-27 18:08
 
+
+
+
+
+## 215_Kth Largest Element in an Array
+
+> 2017-09-30 08:52
+
+- 加深理解了partition算法
+- 更深一步学会使用three-way partition 算法
 
 
