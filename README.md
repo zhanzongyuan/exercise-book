@@ -68,3 +68,11 @@ The repository is used to store my code for problems in leetcode
 - 更深一步学会使用three-way partition 算法
 
 
+
+## 023_Merge k sorted lists
+
+> 2017-09-30 15:04
+
+- 难点
+  - 指针操作
+  - 队列递推，两两合并，反向BFS，自底向上
