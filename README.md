@@ -14,6 +14,10 @@ The repository is used to store my code for problems in leetcode
 - 在对第二，第三个数进行查找的时候，为了迎合大小顺序原则，对后面的序列进行了两次遍历，一次用于map存储下标，一次是逐个搜索；改进是需要放弃原来的2sum思想，因为对于3sum我们需要看到不同的是，这里有出现重复序列的可能；由于从小到大拼，所以可以自然的想到对后面的序列进行两端向中间靠拢的搜索，于是可以设置left，right，对于当前sum=nums[left]+nums[right]比较target，根据大小比适当移动left和right；实现这个的同时还需要进行消重的移动
 - 外层循环里加入判断，判断当前位置nums[i]如果大于0，则后面的搜索是找不到新的目标序列的（但是不知道为什么加入这个后反而变慢了）
 
+
+
+
+
 ## 006 ZigZag Conversion
 > 2017-09-13 12:16
 - bug1: zigzag排列形式理解，以及规律探索
@@ -52,6 +56,8 @@ The repository is used to store my code for problems in leetcode
 - 答案方法更巧妙，通过一个count，利用了众数过半的特点
 
 
+
+
 ## 053_Maximum Subarray
 
 > 2017-09-27 18:08
@@ -69,6 +75,12 @@ The repository is used to store my code for problems in leetcode
 
 
 
+
+
+
+
+
+
 ## 023_Merge k sorted lists
 
 > 2017-09-30 15:04
@@ -76,3 +88,37 @@ The repository is used to store my code for problems in leetcode
 - 难点
   - 指针操作
   - 队列递推，两两合并，反向BFS，自底向上
+
+
+
+
+
+##  218_The Skyline Problem
+
+> 2017-10-01 18:28
+
+- 使用归并融合的思想
+  - 分治思想：将建筑物分为两块，分别融合，在子块里面递归分块；
+  - 所以递归调用的函数抽象成一个二叉树
+  - 改进：通过队列自底向上进行两两归并
+    - 每取队列头两个skyline进行归并，放入队列尾
+    - 总体而言是在递归二叉树思想基础上一层一层向上归并，从而省去了递归调用函数所耗费的时间
+- skyline归并方法
+  - 当总体的算法过程确定后，算法的核心问题就变成了skyline的归并问题
+
+  - skyline的归并方法是通过观察skyline的合并规律的总结，但是没有具体的证明过程
+
+  - 方法：
+
+    - 设两个已经按x坐标排序的skyline坐标的数组的当前高度h1和h2，初始化为0
+    - 每次比较两个数组头的坐标的x值（比如pos1，pos2）
+      - 假设 pos1.x<pos2.x
+        - 在对应的数组skyline1头弹出pos1
+        - 同时更新pos1对应skyline1高度值h1
+        - `h1=pos1.y`
+        - 将pos1插入合并后的数组newskyline前，比较h1，h2，取其中较大的数更新为pos1的新的高度，将pos1插入数组，**（注意：插入前要消重，防止插入连续y值相等的数）**
+        - `newskyline.push_back(pair<int, inr>(pos1.x, max(h1, h2)));`
+      - 当pos1.x==pos2.x
+        - 同时弹出skyline1，skyline2的头元素pos1， pos2
+        - 更新h1， h2
+        - 再一次插入更新高度为`max(h1, h2)`新的坐标值到新合并后的数组中**（注意：插入前要消重，防止插入连续y值相等的数）**
