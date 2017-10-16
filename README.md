@@ -23,11 +23,19 @@ The repository is used to store my code for problems in leetcode
 - bug1: zigzag排列形式理解，以及规律探索
 - bug2: s="AB" 1; 当转换行数为1时，出现bug，当作特殊情况处理，临界点bug
 
+
+
+
+
 ## 007 int2str
 > 2017-09-18 08:35
 - 对越界的判别方法
     - 符号变化
     - long long 范围用INT_MAX和INT_MIN判定
+
+
+
+
 
 ## 009 Palindrome Number
 > 2017-09-19 13:00
@@ -35,6 +43,10 @@ The repository is used to store my code for problems in leetcode
 - bug2 100021 验证中间变成只有一位的数字 不可用x<10判定
 - bug3 `k==0` 不可`k==1`
 - improve thinking 回文比较方法，数字反向后比较
+
+
+
+
 
 ## 010 Regular Expression Matching
 > 2017-09-25 08:03
@@ -103,7 +115,7 @@ The repository is used to store my code for problems in leetcode
   - 改进：通过队列自底向上进行两两归并
     - 每取队列头两个skyline进行归并，放入队列尾
     - 总体而言是在递归二叉树思想基础上一层一层向上归并，从而省去了递归调用函数所耗费的时间
-- skyline归并方法
+- skyline归并方法———“影子叠加算法”
   - 当总体的算法过程确定后，算法的核心问题就变成了skyline的归并问题
 
   - skyline的归并方法是通过观察skyline的合并规律的总结，但是没有具体的证明过程
@@ -122,3 +134,19 @@ The repository is used to store my code for problems in leetcode
         - 同时弹出skyline1，skyline2的头元素pos1， pos2
         - 更新h1， h2
         - 再一次插入更新高度为`max(h1, h2)`新的坐标值到新合并后的数组中**（注意：插入前要消重，防止插入连续y值相等的数）**
+
+
+
+
+
+##  310_Minimum Height Trees
+
+> 2017-10-16 20:16
+
+- 寻找最小高度树
+- 一开始直观思路是：通过深度优先搜索寻找一条树中的叶子到叶子的最长路径，取路径中间节点
+- 通过思考发现办法不实际，有特例使得仅通过深度优先搜索无法找寻到最长路径
+- 简单查看答案发现一种更为简单的办法，类似于拓扑排序，简单的说就是每轮去掉树的叶子节点，直到最后仅剩下一片或者两片叶子
+- 实现过程略复杂，考虑到一种可能出现的问题，即在一轮去除叶子节点的过程里会对树倒数第二层的节点实时更新，使得原本非叶子节点的节点在一轮为结束的时候变为叶子节点，导致误删
+  - 设置标记数组，标记删除一个叶子节点后受其影响而更新的节点
+  - 设置标记数组，标记已经被删除的节点，以便最后查询得到最终删剩的节点
