@@ -168,3 +168,16 @@ The repository is used to store my code for problems in leetcode
 > 2017-10-27 00:03
 
 - 拓扑排序
+
+
+
+## 032_Longest Valid Parentheses
+
+> 2017-10-28 10:14
+
+- 难度：hard
+
+
+- stack，括号匹配
+- DP，动态规划
+
