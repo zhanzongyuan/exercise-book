@@ -181,3 +181,13 @@ The repository is used to store my code for problems in leetcode
 - stack，括号匹配
 - DP，动态规划
 
+
+
+
+## 174_Dungeon Game
+
+> 2017-11-03 18.09
+
+- 难度：hard
+- 初始值问题
+- DP，动态规划
