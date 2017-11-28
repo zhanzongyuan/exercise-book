@@ -217,3 +217,13 @@ The repository is used to store my code for problems in leetcode
 - 难度： hard
 - DP
 - 分类讨论情况多，需要思维清晰
+
+
+
+## 132_Palindrome Partitioning II
+
+> 2017-11-28 14:24
+
+- 难度：hard
+- DP
+- 将两个dp合并，节省运行时间，需要考虑末端特殊情况
