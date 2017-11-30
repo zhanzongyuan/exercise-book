@@ -227,3 +227,14 @@ The repository is used to store my code for problems in leetcode
 - 难度：hard
 - DP
 - 将两个dp合并，节省运行时间，需要考虑末端特殊情况
+
+
+
+
+
+## 140_Word Break II
+
+> 2017-11-30 20:52
+
+- 难度：hard
+- DP+DFS
