@@ -238,3 +238,23 @@ The repository is used to store my code for problems in leetcode
 
 - 难度：hard
 - DP+DFS
+
+
+
+## 198\_House Robber & 303\_Range Sum Query-Immutable
+
+> 2017-12-10 21:39
+
+- 难度：easy
+- DP
+
+
+
+## 494_Target Sum
+
+>  2017-12-10 21:39
+
+- 难度：medium
+- DP
+- 考虑如何将原问题转换，通过数学公式简化为一个更简单的等价问题
+- 对复杂的dp问题的思考，可以尝试转换，例如数组下标存在负数等
