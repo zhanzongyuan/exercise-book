@@ -258,3 +258,22 @@ The repository is used to store my code for problems in leetcode
 - DP
 - 考虑如何将原问题转换，通过数学公式简化为一个更简单的等价问题
 - 对复杂的dp问题的思考，可以尝试转换，例如数组下标存在负数等
+
+
+
+## 741_Cherry Pickup
+
+> 2017-12-11 14:45
+
+- 难度：hard
+- DP
+- 两条路径的最大路讨论，需要复杂的动态规划设计，考虑k长度的路径，同时计算两条路和的最大值
+
+
+
+## 70_Climbing Stairs
+
+> 2017-12-11 16:13
+
+- 难度：easy
+- DP、矩阵快速幂
