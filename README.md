@@ -277,3 +277,23 @@ The repository is used to store my code for problems in leetcode
 
 - 难度：easy
 - DP、矩阵快速幂
+
+## 669_Trim a Binary Search Tree
+> 2017-12-15 10:59
+- 难度：easy
+- DFS，不能用delete释放内存
+
+## 687_Longest Univalue Path
+> 2017-12-15 10:59
+>
+- 难度：easy
+- DFS
+
+
+
+## 652_Find Duplicate Subtrees
+
+> 2017-12-18 11:22
+
+- 难度：medium
+- DFS+Hash
