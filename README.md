@@ -305,8 +305,16 @@ The repository is used to store my code for problems in leetcode
 - 难度：medium
 - DFS
 
+
 ## 671_Second Minimum Node In a Binary Tree
 
 > 2018-01-26 16:54
 
 - 难度：easy
+
+
+## 501_Find Mode in Binary Search Tree
+
+> 2018-01-30 07:38
+
+- 难度: easy
