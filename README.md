@@ -318,3 +318,12 @@ The repository is used to store my code for problems in leetcode
 > 2018-01-30 07:38
 
 - 难度: easy
+
+## 764_Largest Plus Sign
+
+> 2018-01-30 10:40
+
+- 难度: medium
+
+- 感想：这道题不属于动态规划，强行放到动归标签，误导人。需要考虑到二维信息hash化/序列化。代码很丑，感觉和暴力枚举一样。
+
