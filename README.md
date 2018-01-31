@@ -327,3 +327,10 @@ The repository is used to store my code for problems in leetcode
 
 - 感想：这道题不属于动态规划，强行放到动归标签，误导人。需要考虑到二维信息hash化/序列化。代码很丑，感觉和暴力枚举一样。
 
+## 740_Delete and Earn
+
+> 2018-01-31 10:57
+
+- 难度: medium
+
+- 考到数组预先排序，和简单的dp状态设计
