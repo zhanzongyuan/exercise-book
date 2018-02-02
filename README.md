@@ -334,3 +334,11 @@ The repository is used to store my code for problems in leetcode
 - 难度: medium
 
 - 考到数组预先排序，和简单的dp状态设计
+
+##  698_Partition to K Equal Sum Subsets
+
+> 2018-01-02 14:26
+
+- 难度: medium
+
+- 结果有点超乎我的想象，居然是个NP-hard问题，本以为简单的$n^2$复杂度的动归就可以解决。最后居然需要$n2^2$的复杂度，而且动态转移方程没有想象的那么简单，居然用到了之前算法课上的二进制数表示集合，很强。集合版本的动态规划。
