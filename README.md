@@ -11,7 +11,7 @@ The repository is used to store my code for algorithm problems.
 
 - 这道和698类似，但是降低了难度，特别是只分为2个集合，一下子就从NP-hard问题降低到了普通的P问题，但是解决方法还是很多的，比如DFS，第一快的就是用DFS，但是这里我本来想沿用698的dp算法，但是发现不行，会超时。看了看别人的做法后，自己设计了dp方程，把问题转化成：是否存在集合可以组成一个目标数。用目标target作为下标，最终得到AC。但是观摩别人的算法后发现，可以用bitSet高效实现我的dp算法，而且bitSet很方便，最后尝试了bitSet的使用，真的很快，方便，顺便学了bitSet的使用。受益颇多。
 
-
+<br>
 
 > 2018-01-26 16:54
 >
@@ -19,7 +19,7 @@ The repository is used to store my code for algorithm problems.
 
 - 难度：easy
 
-
+<br>
 
 > 2018-01-02 14:26
 >
@@ -29,7 +29,7 @@ The repository is used to store my code for algorithm problems.
 
 - 结果有点超乎我的想象，居然是个NP-hard问题，本以为简单的$n^2$复杂度的动归就可以解决。最后居然需要$n2^2$的复杂度，而且动态转移方程没有想象的那么简单，居然用到了之前算法课上的二进制数表示集合，很强。集合版本的动态规划。
 
-
+<br>
 
 > 2018-01-31 10:57
 >
@@ -39,7 +39,7 @@ The repository is used to store my code for algorithm problems.
 
 - 考到数组预先排序，和简单的dp状态设计
 
-
+<br>
 
 > 2018-01-30 10:40
 >
@@ -51,7 +51,7 @@ The repository is used to store my code for algorithm problems.
 
 
 
-
+<br>
 
 > 2018-01-30 07:38
 >
@@ -61,7 +61,7 @@ The repository is used to store my code for algorithm problems.
 
 
 
-
+<br>
 
 > 2017-12-21 19:52
 >
@@ -70,7 +70,7 @@ The repository is used to store my code for algorithm problems.
 - 难度：medium
 - DFS
 
-
+<br>
 
 > 2017-12-18 11:22
 >
@@ -79,7 +79,7 @@ The repository is used to store my code for algorithm problems.
 - 难度：medium
 - DFS+Hash
 
-
+<br>
 
 > 2017-12-15 10:59
 >
@@ -87,7 +87,7 @@ The repository is used to store my code for algorithm problems.
 - 难度：easy
 - DFS
 
-
+<br>
 
 > 2017-12-15 10:59
 >
@@ -95,7 +95,7 @@ The repository is used to store my code for algorithm problems.
 - 难度：easy
 - DFS，不能用delete释放内存
 
-
+<br>
 
 
 
@@ -106,7 +106,7 @@ The repository is used to store my code for algorithm problems.
 - 难度：easy
 - DP、矩阵快速幂
 
-
+<br>
 
 > 2017-12-11 14:45
 >
@@ -116,7 +116,7 @@ The repository is used to store my code for algorithm problems.
 - DP
 - 两条路径的最大路讨论，需要复杂的动态规划设计，考虑k长度的路径，同时计算两条路和的最大值
 
-
+<br>
 
 >  2017-12-10 21:39
 >
@@ -127,7 +127,7 @@ The repository is used to store my code for algorithm problems.
 - 考虑如何将原问题转换，通过数学公式简化为一个更简单的等价问题
 - 对复杂的dp问题的思考，可以尝试转换，例如数组下标存在负数等
 
-
+<br>
 
 
 
@@ -138,7 +138,7 @@ The repository is used to store my code for algorithm problems.
 - 难度：easy
 - DP
 
-
+<br>
 
 > 2017-11-30 20:52
 >
@@ -147,7 +147,7 @@ The repository is used to store my code for algorithm problems.
 - 难度：hard
 - DP+DFS
 
-
+<br>
 
 > 2017-11-28 14:24
 >
@@ -159,7 +159,7 @@ The repository is used to store my code for algorithm problems.
 
 
 
-
+<br>
 
 
 
@@ -171,7 +171,7 @@ The repository is used to store my code for algorithm problems.
 - DP问题
 - 边界值
 
-
+<br>
 
 > 2017-11-15 15:11
 >
@@ -181,7 +181,7 @@ The repository is used to store my code for algorithm problems.
 - DP
 - 两位和一位情况的仔细考虑
 
-
+<br>
 
 > 2017-11-15 17:47
 >
@@ -191,7 +191,7 @@ The repository is used to store my code for algorithm problems.
 - DP
 - 分类讨论情况多，需要思维清晰
 
-
+<br>
 
 > 2017-11-03 18.09
 >
@@ -201,7 +201,7 @@ The repository is used to store my code for algorithm problems.
 - 初始值问题
 - DP，动态规划
 
-
+<br>
 
 
 
@@ -215,7 +215,7 @@ The repository is used to store my code for algorithm problems.
 - stack，括号匹配
 - DP，动态规划
 
-
+<br>
 
 > 2017-10-27 00:03
 >
@@ -223,7 +223,7 @@ The repository is used to store my code for algorithm problems.
 
 - 拓扑排序
 
-
+<br>
 
 > 2017-10-19 14:51
 >
@@ -233,7 +233,7 @@ The repository is used to store my code for algorithm problems.
 - 指针的使用
 - map的使用
 
-
+<br>
 
 
 
@@ -249,7 +249,7 @@ The repository is used to store my code for algorithm problems.
   - 设置标记数组，标记删除一个叶子节点后受其影响而更新的节点
   - 设置标记数组，标记已经被删除的节点，以便最后查询得到最终删剩的节点
 
-
+<br>
 
 
 
@@ -283,7 +283,7 @@ The repository is used to store my code for algorithm problems.
         - 更新h1， h2
         - 再一次插入更新高度为`max(h1, h2)`新的坐标值到新合并后的数组中**（注意：插入前要消重，防止插入连续y值相等的数）**
 
-
+<br>
 
 
 
@@ -295,16 +295,7 @@ The repository is used to store my code for algorithm problems.
   - 指针操作
   - 队列递推，两两合并，反向BFS，自底向上
 
-
-
-
-
-> 2017-09-30 08:52
->
-> LeetCode: 215_Kth Largest Element in an Array
-
-- 加深理解了partition算法
-- 更深一步学会使用three-way partition 算法
+<br>
 
 
 
@@ -315,7 +306,16 @@ The repository is used to store my code for algorithm problems.
 - 加深理解了partition算法
 - 更深一步学会使用three-way partition 算法
 
+<br>
 
+> 2017-09-30 08:52
+>
+> LeetCode: 215_Kth Largest Element in an Array
+
+- 加深理解了partition算法
+- 更深一步学会使用three-way partition 算法
+
+<br>
 
 > 2017-09-27 18:08
 >
@@ -323,7 +323,7 @@ The repository is used to store my code for algorithm problems.
 
 
 
-
+<br>
 
 > 2017-09-27 17:33
 >
@@ -332,7 +332,7 @@ The repository is used to store my code for algorithm problems.
 - finished
 - 答案方法更巧妙，通过一个count，利用了众数过半的特点
 
-
+<br>
 
 
 
@@ -342,7 +342,7 @@ The repository is used to store my code for algorithm problems.
 - bug1: zigzag排列形式理解，以及规律探索
 - bug2: s="AB" 1; 当转换行数为1时，出现bug，当作特殊情况处理，临界点bug
 
-
+<br>
 
 > 2017-09-19 13:00
 >
@@ -352,7 +352,7 @@ The repository is used to store my code for algorithm problems.
 - bug3 `k==0` 不可`k==1`
 - improve thinking 回文比较方法，数字反向后比较
 
-
+<br>
 
 
 
@@ -363,7 +363,7 @@ The repository is used to store my code for algorithm problems.
     - 符号变化
     - long long 范围用INT_MAX和INT_MIN判定
 
-
+<br>
 
 > 2017-09-25 08:03
 >
@@ -375,7 +375,7 @@ The repository is used to store my code for algorithm problems.
     - Bottom-Up：不需要进行函数自身的递归调用，通过状态转移方程可以知道，一个状态的答案由右边的状态和下一层的状态决定，应该对整个状态矩阵进行从底向上从右到左的计算，最底层的计算可以在上面几层的计算里使用到
     - Bottom-Up：注意点：对于边界值的特殊情况的处理需要仔细斟酌，矩阵的两个维度可以大多一排，存特殊值。
 
-
+<br>
 
 
 
@@ -393,7 +393,7 @@ The repository is used to store my code for algorithm problems.
 - 在对第二，第三个数进行查找的时候，为了迎合大小顺序原则，对后面的序列进行了两次遍历，一次用于map存储下标，一次是逐个搜索；改进是需要放弃原来的2sum思想，因为对于3sum我们需要看到不同的是，这里有出现重复序列的可能；由于从小到大拼，所以可以自然的想到对后面的序列进行两端向中间靠拢的搜索，于是可以设置left，right，对于当前sum=nums[left]+nums[right]比较target，根据大小比适当移动left和right；实现这个的同时还需要进行消重的移动
 - 外层循环里加入判断，判断当前位置nums[i]如果大于0，则后面的搜索是找不到新的目标序列的（但是不知道为什么加入这个后反而变慢了）
 
-
+<br>
 
 
 
