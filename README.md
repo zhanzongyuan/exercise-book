@@ -1,7 +1,17 @@
 # Exercise Book
 The repository is used to store my code for algorithm problems.
 
+> 2018-08-12 15:47
+>
+> LeetCode: 126. Word Ladder II
 
+- 难度：hard
+
+- 防止超时的tricks：
+    - 找下一个word的时候是更换字母结合unordered_set的find寻找，而不是直接在vector里遍历找。
+    - 用BFS，由于是寻找最短的path，所以每个备选的path之前遇见的word都可以从wordList中删除，使得BFS每层都可以减小很多搜索量。每次BFS循环处理一层相同长度的备选path。
+
+<br>
 
 > 2018-01-03 13:30
 >
