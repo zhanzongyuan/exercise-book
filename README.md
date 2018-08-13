@@ -1,6 +1,24 @@
 # Exercise Book
 The repository is used to store my code for algorithm problems.
 
+> 2018-08-13 11:26
+>
+> LeetCode: 55. Jump Game
+
+- 难度： hard
+
+- 解决方法：贪心、动归
+    - 我用的是一个从后往前的贪心，遍历一次即可解决问题，每次记录可以间接到达last position的最近一个位置。
+
+> LeetCode: 45: Jump Game II
+
+- 难度： hard
+
+- 解决方法：一开始用简单dp结果超时，后来调整后使用贪心实现线性时间的算法。跳转步数的计算上出现设计含糊的问题，导致开始出现很多不严谨的bug。
+
+<br>
+
+
 > 2018-08-12 15:47
 >
 > LeetCode: 126. Word Ladder II
