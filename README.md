@@ -1,6 +1,19 @@
 # Exercise Book
 The repository is used to store my code for algorithm problems.
 
+> 2018-08-14 13:59
+> 
+> LeetCode: 152. Maximum Product Subarray
+
+- 解决方法：贪心、动归
+    - 我使用的是dp算法，一开始用二维数组存储超内存限制，后面用一维数组
+    - 动归不是时间复杂度最优的算法，最优的算法是贪心：https://leetcode.com/problems/maximum-product-subarray/discuss/48230/Possibly-simplest-solution-with-O(n)-time-complexity
+
+> LeetCode: 54. Spiral Matrix
+
+- 解决方法：模拟
+
+<br>
 > 2018-08-13 11:26
 >
 > LeetCode: 55. Jump Game
