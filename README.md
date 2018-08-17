@@ -1,6 +1,18 @@
 # Exercise Book
 The repository is used to store my code for algorithm problems.
 
+> 2018-08-17 19:47
+>
+> LeetCode: 719. Find K-th Smallest Pair Distance
+
+- 解决方法：二分查找
+    - 这是一个很值得学习的一道题，一开始没有想到用二分查找。后来发现很多同类的找第k个数的题目基本都能二分查找。
+    - 其中一个trick就是设置一个count，用于累计不大于值d的pair个数。
+    - 还有一个要注意的地方就是当count个数刚好等于k的时候不一定是答案，答案的标准是`count>=k`的最小的分界值。
+    - 二分类型的代码，要注意的地方在于临界值，不然容易死循环，所以预先确定好：范围，解的定义，算法是否能够结束。
+
+<br>
+
 > 2018-08-14 13:59
 > 
 > LeetCode: 152. Maximum Product Subarray
