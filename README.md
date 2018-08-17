@@ -19,6 +19,11 @@ The repository is used to store my code for algorithm problems.
         - 需要在移动双指针的时跳过相同的值防止重复，不要重复使用一样的指针值
         - 尽量从两侧向中间做双指针，如果两个都在中间向前，容易因为跳过重复的导致漏了一些结果
 
+> LeetCode: 84. Largest Rectangle in Histogram
+
+- 解决方法：stack，遍历求解
+    - 我用普通的遍历求解过了AC，但是时间复杂度是O(n^2)
+    - 这里有个用stack的，时间复杂度我估计式O(n^2)，但是利用stack的方法很巧妙：https://leetcode.com/problems/largest-rectangle-in-histogram/discuss/128679/C++-stack-based-solution.-Clean-concise-code-with-detailed-explaination.
 
 <br>
 
