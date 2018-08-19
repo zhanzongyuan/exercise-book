@@ -1,6 +1,18 @@
 # Exercise Book
 The repository is used to store my code for algorithm problems.
 
+> 2018-08-19 19:16
+>
+> LeetCode: 79. Word Search
+
+- 解决方法：DFS
+
+> LeetCode: 31. Next Permutation
+
+- 解决方法：掌握排列组合的字典序规律，即可。这个规律找不到，我最后还是直接看答案的。
+
+<br>
+
 > 2018-08-17 19:47
 >
 > LeetCode: 719. Find K-th Smallest Pair Distance
