@@ -1,6 +1,26 @@
 # Exercise Book
 The repository is used to store my code for algorithm problems.
 
+
+> 2018-09-17 08:54
+>
+> LeetCode: 28. Implement strStr()
+
+- 解决方法：KMP
+
+
+> 2018-08-22 20:05
+>
+> LeetCode: 57. Insert Interval
+
+- 解决方法：遍历
+
+> LeetCode: 229. Majority Element II
+
+- 解决方法：Majority Voting算法的变种。但是最终的算法实现形式，很难理解。
+
+<br>
+
 > 2018-08-19 19:16
 >
 > LeetCode: 79. Word Search
@@ -10,6 +30,10 @@ The repository is used to store my code for algorithm problems.
 > LeetCode: 31. Next Permutation
 
 - 解决方法：掌握排列组合的字典序规律，即可。这个规律找不到，我最后还是直接看答案的。
+
+> LeetCode: 581. Shortest Unsorted Continuous Subarray
+
+- 解决方法：无序列中最大最小值
 
 <br>
 
